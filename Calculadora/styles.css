@@ -1,0 +1,81 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+.one-nine{
+    display: grid;
+    grid-template-columns: 1rf 1rf 1rf 1rf;
+}
+
+.calculator{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.btn-signal{
+    padding: 3rem;
+    border: none;
+    font-size: larger;
+    border: 1px solid gray;
+    background-color: rgb(12, 223, 65);
+    color: white;
+}
+
+.btn-num{
+    padding: 3rem;
+    border: none;
+    font-size: larger;
+    border: 1px solid gray;
+    background-color: rgb(226, 10, 129);
+    color: white;
+}
+
+.btn-equal{
+    padding: 3rem;
+    border: none;
+    font-size: larger;
+    border: 1px solid gray;
+    background-color: rgb(13, 226, 52);
+    color: white;
+}
+
+.btn-num:hover{
+    background-color: maroon;
+    color: white;
+}
+
+.input-div{
+    grid-column: span 4;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    border: 2px solid gray;
+    font-size: larger;
+    height: 5rem;
+}
+
+input{
+    width: 100%;
+    height: 100%;
+    padding: opx;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+@media only screen and(max-width:800px){
+    .btn-num{
+        padding: 2rem;
+        border: none;
+        font-size: medium;
+        border: 1px solid gray;
+        background-color: rgb(201, 160, 160);
+        color: white;
+    }
+}
